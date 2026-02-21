@@ -5,7 +5,10 @@ basic gardening advice based on those choices.
 """
 
 def get_user_choices():
-    """Prompt the user for a season and plant type and normalise the input."""
+    """Ask the user which season it is and what type of plant they are growing.
+
+    This uses input() so that the program is interactive rather than using hard-coded values.
+    """
     season = input("Enter the current season (spring/summer/autumn/winter): ").strip().lower()
     plant_type = input("Enter the plant type (flower/vegetable): ").strip().lower()
     return season, plant_type
